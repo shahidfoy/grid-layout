@@ -1,0 +1,25 @@
+div {
+    display: block;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+        100px 100px /
+        auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.container div:nth-child(1) {
+    order: 2;
+}
+
+.container div:nth-child(5) {
+    order: 1;
+}
+
+.container div:nth-child(3) {
+    order: -1;
+}

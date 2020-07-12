@@ -1,0 +1,46 @@
+div {
+    display: block;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80px 160px 320px 160px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "image image cta cta"
+        "main main main main"
+        "links links links ads"
+        "footer footer footer footer";
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.teaser-image {
+    grid-area: image;
+}
+
+.teaser-cta {
+    grid-area: cta;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer-links {
+    grid-area: links;
+}
+
+.footer-ads {
+    grid-area: ads
+}
+
+.super-footer {
+    grid-area: footer;
+}

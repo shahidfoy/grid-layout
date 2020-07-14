@@ -1,0 +1,11 @@
+div {
+    display: block;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid: none / auto-flow 1fr;
+    grid-gap: 10px;
+}
